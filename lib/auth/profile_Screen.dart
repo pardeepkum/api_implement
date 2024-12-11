@@ -11,14 +11,17 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  //Declare  a textField for  for api calling the data variable to pass the data for api
   final TextEditingController name = TextEditingController();
   final TextEditingController email = TextEditingController();
   final TextEditingController password = TextEditingController();
   final TextEditingController mobile = TextEditingController();
 
+  //variable declare for a image picker
   File? _profileImage;
   List<String> imagePaths = [];
 
+  //method for the pick image
   Future<void> _pickImage(ImageSource source) async {
     try {
       final picker = ImagePicker();
@@ -41,6 +44,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
   }
 
+  // show the bottomSheet Modal sheet
   void _showImagePickerOptions(BuildContext context) {
     showModalBottomSheet(
       context: context,

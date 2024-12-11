@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:api_testing/auth/profileScreen.dart';
+import 'package:api_testing/auth/profile_Screen.dart';
 import 'package:api_testing/auth/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:api_testing/model/home_model.dart';

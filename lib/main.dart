@@ -1,3 +1,4 @@
+import 'package:api_testing/auth/login_screen.dart';
 import 'package:api_testing/firebase_options.dart';
 import 'package:api_testing/utils/text_theme.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -17,7 +18,7 @@ void main() async{
       return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: "",
-        home:   const HomeScreen(),
+        home:   const LoginScreen(),
         theme: ThemeData(
           textTheme: MyTexts(),
           fontFamily: MyTexts.Montserrat,
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:   const HomeScreen(),
+      home:   const LoginScreen(),
     );
   }
 }
